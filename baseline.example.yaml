@@ -1,0 +1,75 @@
+# Athlete profile template.
+# Copy this file to baseline.yaml and fill in the values.
+# baseline.yaml is gitignored — it holds personal data and stays local.
+
+athlete:
+  name: ""
+  age: ""
+  sex: ""
+  weight_kg: ""
+  height_cm: ""
+
+goal_race:
+  event: ""
+  date: ""
+  location: ""
+  goal_time: ""
+  notes: ""
+current_fitness:
+  weeks_until_race: ""
+  weekly_hours_recent: ""
+  longest_recent:
+    swim_meters: ""
+    bike_km: ""
+    run_km: ""
+  ftp_watts: ""
+  threshold_pace_run: ""
+  swim_css_pace: ""
+
+weekly_schedule:
+  available_hours: ""
+  rest_day: ""
+
+  sport_plan:
+    Sunday:
+      - ""
+      - ""
+    Monday:
+      - ""
+      - ""
+    Tuesday:
+      - ""
+      - ""
+    Wednesday:
+      - ""
+      - ""
+    Thursday:
+      - ""
+      - ""
+    Friday:
+      - ""
+      - ""
+    Saturday: ""
+
+equipment:
+  pool_access: ""
+  pool_notes: ""
+  bike: ""
+  trainer: ""
+  gym_access: ""
+  running_terrain: ""
+
+injuries: ""
+
+nutrition:
+  diet_type: ""
+  allergies: ""
+  dislikes: ""
+  daily_calorie_target: ""
+  notes: ""
+coaching:
+  tone: ""
+  warn_about_overtraining: ""
+  include_food_suggestions: ""
+  include_strength: ""
+  max_briefing_length_words: ""
