@@ -1,0 +1,6 @@
+# Core dependencies for the workout bot
+google-genai>=0.8.0        # Gemini API for daily coaching (free tier)
+garminconnect>=0.2.20      # Unofficial Garmin Connect client
+resend>=2.0.0              # Email delivery (free tier: 100/day)
+PyYAML>=6.0                # baseline.yaml parsing
+python-dotenv>=1.0.0       # local .env loading (GH Actions uses real env vars)
