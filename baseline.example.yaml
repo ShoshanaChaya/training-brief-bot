@@ -1,34 +1,36 @@
 # Athlete profile template.
-# Copy this file to baseline.yaml and fill in the values.
-# baseline.yaml is gitignored — it holds personal data and stays local.
+#
+# Copy this file to baseline.yaml and fill it in. The bot reads it every run to
+# tailor the plan. baseline.yaml is gitignored — it holds personal data and stays
+# on your machine. Leave a value blank if it does not apply.
 
 athlete:
-  name: ""
-  age: ""
-  sex: ""
-  weight_kg: ""
-  height_cm: ""
+  name: ""                    # name used to address you in the briefing
+  age: ""                     # years
+  sex: ""                     # M / F
+  weight_kg: ""               # number, kilograms
+  height_cm: ""               # number, centimetres
 
 goal_race:
-  event: ""
-  date: ""
-  location: ""
-  goal_time: ""
-  notes: ""
+  event: ""                   # Ironman | 70.3 | Marathon | ...
+  date: ""                    # YYYY-MM-DD
+  location: ""                # optional
+  goal_time: ""               # e.g. "12:30", or leave blank
+  notes: ""                   # anything the coach should know about this race
 current_fitness:
-  weeks_until_race: ""
-  weekly_hours_recent: ""
+  weeks_until_race: ""        # number
+  weekly_hours_recent: ""     # training hours per week lately
   longest_recent:
-    swim_meters: ""
-    bike_km: ""
-    run_km: ""
-  ftp_watts: ""
-  threshold_pace_run: ""
-  swim_css_pace: ""
+    swim_meters: ""           # longest recent swim
+    bike_km: ""               # longest recent ride
+    run_km: ""                # longest recent run
+  ftp_watts: ""               # cycling FTP, if you know it
+  threshold_pace_run: ""      # e.g. "4:30/km"
+  swim_css_pace: ""           # e.g. "1:45/100m"
 
 weekly_schedule:
-  available_hours: ""
-  rest_day: ""
+  available_hours: ""         # realistic hours per week
+  rest_day: ""                # e.g. "Monday"
 
   sport_plan:
     Sunday:
@@ -52,24 +54,18 @@ weekly_schedule:
     Saturday: ""
 
 equipment:
-  pool_access: ""
-  pool_notes: ""
-  bike: ""
-  trainer: ""
-  gym_access: ""
-  running_terrain: ""
+  pool_access: ""             # true / false
+  pool_notes: ""              # opening hours, distance, lane availability
+  bike: ""                    # road / tri / gravel
+  trainer: ""                 # indoor trainer available? true / false
+  gym_access: ""              # true / false
+  running_terrain: ""         # flat / hilly / trail
 
-injuries: ""
+injuries: ""                  # current or recurring issues the coach should respect
 
 nutrition:
-  diet_type: ""
-  allergies: ""
-  dislikes: ""
+  diet_type: ""               # e.g. omnivore, vegetarian
+  allergies: ""               # comma separated, or leave blank
+  dislikes: ""                # foods to avoid suggesting
   daily_calorie_target: ""
-  notes: ""
-coaching:
-  tone: ""
-  warn_about_overtraining: ""
-  include_food_suggestions: ""
-  include_strength: ""
-  max_briefing_length_words: ""
+  notes: ""                   # anything the coach should know about this race
